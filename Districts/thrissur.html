@@ -17,7 +17,7 @@
 <body>
     <nav class="navbar navbar-expand-lg text-bg-success p-3">
         <div class="container-fluid">
-            <a class="navbar-brand" href="/index.html">Kerala Tourism</a>
+            <a class="navbar-brand" href="/Assignment-2-Kerala-tourism-website/index.html">Kerala Tourism</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
                 aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -25,13 +25,13 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="/Assignment-2-Kerala-tourism-website/index.html">Home</a>
                     </li>
                     <li class="nav-item-login">
-                        <a class="nav-link" href="/login.html">Login</a>
+                        <a class="nav-link" href="/Assignment-2-Kerala-tourism-website/login.html">Login</a>
                     </li>
                     <li class="nav-item-signup ml-auto">
-                        <a class="nav-link" href="/signIn.html">Sign up</a>
+                        <a class="nav-link" href="/Assignment-2-Kerala-tourism-website/signIn.html">Sign up</a>
                     </li>
                 </ul>
             </div>
@@ -44,7 +44,7 @@
                     and archaeological wealth. It is also well endowed with splendid natural beauty in the form of
                     Beaches, Hills, Waterfalls etc.</p>
             <div class="col-md-8">
-                <img src="images/athirappily falls kerala harstuff.jpg" class="district-page-image">
+                <img src="/Assignment-2-Kerala-tourism-website/Images/athirappily falls kerala harstuff.jpg" class="district-page-image">
             </div>
             <div class="col-md-4">
                 <div class="district-tourist-spot">
@@ -67,23 +67,138 @@
         
     </div>
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </html>
+<style>
+    .carousel-item img,
+  .carousel-item,
+  .d-block {
+      object-fit: cover;
+      /* height: 100vh;
+      width: 50%; */
+      height:700px;
+  }
+  .nav-item-login{
+     float:left;
+  }
+  .banner {
+     
+     height: 500px;
+     background-size: cover;
+     background-position: center;
+     position: relative;
+     /* margin:2%; */
+     margin-top: 2%;
+   }
+   /* Add the overlay for text */
+   .banner::before {
+     content: '';
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.5);
+   }
+   /* Add text content */
+   .banner-text {
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     color: #fff;
+     text-align: center;
+     z-index: 1;
+   }
+   .banner-text h1 {
+     font-size: 60px;
+     font-weight: bold;
+     margin-bottom: 20px;
+   }
+   .banner-text p {
+     font-size: 24px;
+     line-height: 1.5;
+     max-width: 500px;
+     margin: 0 auto;
+   }
+   .row{
+     margin-top: 8%;
+   }
+   .navbar-nav .mb-lg-0 li:first-child {
+     float: left;
+   }
+   
+   .navbar-nav .mb-lg-0 li {
+     float: right;
+     margin-left: 10px; /* Add some space between the list items */
+   }
+   /* login page */
+   .login-page .container {
+     max-width: 700px;
+     /* margin: auto; */
+     margin-top: 100px;
+     border: 1px solid #ddd;
+     padding: 20px;
+     background-color: lavender;
+   }
+   
+   form {
+     margin-bottom: 20px;
+   }
+   
+   h1 {
+     text-align: center;
+     margin-bottom: 30px;
+   }
+   
+   .btn-primary {
+     width: 100%;
+   }
+   .district-page-image{
+     width:100%;
+     height:auto;
+   }
+   .form-group{
+     margin: 5%;
+   }
+   .login-page .btn-primary,.sign-up-page .btn-primary{
+     width: 90%;
+     margin: 5%;
+   }
+   .district-tourist-spot{
+     margin-top: 5%;
+   }
+ 
+   .sign-up-page .container{
+     margin-top: 100px;
+     border: 1px solid #ddd;
+     padding: 15px;
+     background-color: lavender;
+     max-width: 700px;
+   }
+   .navbar-brand,.nav-link,.nav-item .nav-link .active{
+     color:white !important;
+   }
+   .card:hover {
+     box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+     transform: translateY(-5px);
+   }
+   .row h2{
+     font-weight: 700;
+   }
+   .row p{
+     text-align: left;
+     font-size: 19px;
+   }
+   .district-tourist-spot li{
+     font-size: 18px;
+   }
+   .nav-item{
+     margin-right: auto;
+   }
+   .card-img-top{
+     height:300px;
+   }
+   body{
+     background-color:cornsilk;
+   } 
+ </style>
