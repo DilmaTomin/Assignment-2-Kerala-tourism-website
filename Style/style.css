@@ -10,7 +10,7 @@
     float:left;
  }
  .banner {
-    background-image: url('https://www.keralatourism.org/images/picture/large/Fishing_nets_in_the_backwaters_of_Kerala_1629.jpg');
+    background-image: url('/Images/Fishing_nets_in_the_backwaters_of_Kerala_1629.jpg');
     height: 500px;
     background-size: cover;
     background-position: center;
@@ -126,4 +126,7 @@
   }
   .card-img-top{
     height:300px;
+  }
+  body{
+    background-color:cornsilk;
   }
