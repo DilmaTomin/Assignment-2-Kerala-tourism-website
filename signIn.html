@@ -40,47 +40,95 @@
   <div class="sign-up-page">
     <div class="container">
       <h1>Signup Page</h1>
-      <form>
+      <form id="myForm">
+
         <div class="form-group">
+
           <label for="name">Name:</label>
-          <input type="text" class="form-control" id="name" placeholder="Enter name" name="name" required>
+
+          <input type="text" class="form-control" id="name" onblur="nameValidation()" placeholder="Enter name"
+            name="name" required>
+
+          <span id="nameError"></span>
+
         </div>
+
         <div class="form-group">
+
           <label for="email">Email address:</label>
-          <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
+
+          <input type="email" class="form-control" id="email" onblur="EmailValidation()" placeholder="Enter email"
+            name="email" required>
+
+          <span id="emailError"></span>
+
         </div>
+
         <div class="form-group">
+
           <label for="password">Password:</label>
-          <input type="password" class="form-control" id="password" placeholder="Enter password" name="password"
-            required>
+
+          <input type="password" class="form-control" id="password" onblur="passwordValidation()"
+            placeholder="Enter password" name="password" required>
+
+          <span id="passwordError"></span>
+
         </div>
+
         <div class="form-group">
+
           <label for="confirm-password">Confirm Password:</label>
-          <input type="password" class="form-control" id="confirm-password" placeholder="Enter password again"
-            name="confirm-password" required>
+
+          <input type="password" class="form-control" id="confirm-password" onblur="validateConfirmPassword()"
+            placeholder="Enter password again" name="confirm-password" required>
+
+          <span id="confirm-passwordError"></span>
+
         </div>
-        <button type="submit" class="btn btn-primary">Submit</button>
+
+        <div class="form-group">
+
+          <label for="phone-number">Phone Number:</label>
+
+          <input type="tel" class="form-control" id="phone-number" onblur="phoneValidation()"
+            placeholder="Enter Phone number" name="phone-number" required>
+
+          <span id="phoneError"></span>
+
+        </div>
+
+        <button type="submit" class="btn btn-primary" id="submitButton" onclick="submitSignUpForm()">Submit</button>
+
+        <div id="successMessage" class="success-message"></div>
+
       </form>
+
       <p>Already have an account? <a href="login.html">Login here</a></p>
+
     </div>
+
   </div>
+
+  <script src="/script.js"></script>
 </body>
 
 </html>
 <style>
- .carousel-item img,
- .carousel-item,
- .d-block {
-     object-fit: cover;
-     /* height: 100vh;
+  .carousel-item img,
+  .carousel-item,
+  .d-block {
+    object-fit: cover;
+    /* height: 100vh;
      width: 50%; */
-     height:700px;
- }
- .nav-item-login{
-    float:left;
- }
- .banner {
-    
+    height: 700px;
+  }
+
+  .nav-item-login {
+    float: left;
+  }
+
+  .banner {
+
     height: 500px;
     background-size: cover;
     background-position: center;
@@ -88,6 +136,7 @@
     /* margin:2%; */
     margin-top: 2%;
   }
+
   /* Add the overlay for text */
   .banner::before {
     content: '';
@@ -98,6 +147,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
   }
+
   /* Add text content */
   .banner-text {
     position: absolute;
@@ -108,28 +158,34 @@
     text-align: center;
     z-index: 1;
   }
+
   .banner-text h1 {
     font-size: 60px;
     font-weight: bold;
     margin-bottom: 20px;
   }
+
   .banner-text p {
     font-size: 24px;
     line-height: 1.5;
     max-width: 500px;
     margin: 0 auto;
   }
-  .row{
+
+  .row {
     margin-top: 5%;
   }
+
   .navbar-nav .mb-lg-0 li:first-child {
     float: left;
   }
-  
+
   .navbar-nav .mb-lg-0 li {
     float: right;
-    margin-left: 10px; /* Add some space between the list items */
+    margin-left: 10px;
+    /* Add some space between the list items */
   }
+
   /* login page */
   .login-page .container {
     max-width: 700px;
@@ -139,47 +195,54 @@
     padding: 20px;
     background-color: lavender;
   }
-  
+
   form {
     margin-bottom: 20px;
   }
-  
+
   h1 {
     text-align: center;
     margin-bottom: 30px;
   }
-  
+
   .btn-primary {
     width: 100%;
   }
-  .district-page-image{
-    width:100%;
-    height:auto;
+
+  .district-page-image {
+    width: 100%;
+    height: auto;
   }
-  .form-group{
+
+  .form-group {
     margin: 5%;
   }
-  .login-page .btn-primary,.sign-up-page .btn-primary{
+
+  .login-page .btn-primary,
+  .sign-up-page .btn-primary {
     width: 90%;
     margin: 5%;
   }
-  .district-tourist-spot{
+
+  .district-tourist-spot {
     margin-top: 5%;
   }
 
-  .sign-up-page .container{
+  .sign-up-page .container {
     margin-top: 100px;
     border: 1px solid #ddd;
     padding: 15px;
     background-color: lavender;
     max-width: 700px;
   }
-  .navbar-brand,.nav-link,.nav-item .nav-link .active{
-    color:white !important;
+
+  .navbar-brand,
+  .nav-link,
+  .nav-item .nav-link .active {
+    color: white !important;
   }
 
-  .nav-item{
+  .nav-item {
     margin-right: auto;
   }
-
 </style>
